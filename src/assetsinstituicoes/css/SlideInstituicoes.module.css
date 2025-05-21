@@ -3,10 +3,10 @@
 .destaqueContainer {
   text-align: center;
   padding: 20px;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'DM Sans', sans-serif;
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible; 
   position: relative;
   display: flex;
   flex-direction: column;
@@ -200,5 +200,13 @@
     width: 36px;
     height: 36px;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+  .destaqueSlide {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-x: unset;
   }
 }
