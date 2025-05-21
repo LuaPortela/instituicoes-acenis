@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.instituicoesContainer {
+  position: relative;
+  height: 100vh;
+  background: url('../images/homeinstituicoes2.png') no-repeat;
+  background-size: cover;
+  font-family: 'DM Sans', sans-serif;
+  color: #333;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instituicoesConteudo {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+}
+
+.instituicoesCabecalho {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.instituicoesCabecalho h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.instituicoesCabecalho h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.instituicoesCabecalho p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.instituicoesBotao {
+  background-color: #F76C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.instituicoesBotao a{
+  text-decoration: none;
+  color: white;
+}
+
+.instituicoesBotao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 57, 126, 0.3);
+}
+
+.instituicoesCardUnico {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 220px;
+}
+
+.instituicoesItemEstatistica {
+  width: 48%;
+  padding: 20px;
+}
+
+.instituicoesItemContent {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.instituicoesDivisoria {
+  width: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.instituicoesIconeEstatistica {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.instituicoesItemEstatistica span {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+
+
+
+/* Tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+
+
+  .instituicoesCabecalho {
+    margin-top: 50px;
+  }
+  
+  .instituicoesCardUnico {
+    flex-direction: column;
+    margin-top: 150px;
+    padding: 30px;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .instituicoesItemEstatistica {
+    width: 100%;
+    background: linear-gradient(to bottom, #F76C8C, #FFFFFF);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    padding: 25px;
+  }
+  
+  .instituicoesDivisoria {
+    display: none;
+  }
+}
+
+/* Celular (até 767px) */
+@media (max-width: 767px) {
+  .instituicoesCabecalho h1 {
+    font-size: 20px;
+  }
+  
+  .instituicoesCabecalho h2 {
+    font-size: 36px;
+  }
+  
+  .instituicoesCabecalho p {
+    font-size: 18px;
+  }
+  
+  .instituicoesBotao {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+  
+  .instituicoesCardUnico {
+    margin-top: 100px;
+  }
+  
+  .instituicoesItemEstatistica {
+    padding: 20px;
+  }
+  
+  .instituicoesItemEstatistica span {
+    font-size: 16px;
+  }
+  
+  .instituicoesIconeEstatistica {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .instituicoesCabecalho {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .instituicoesCabecalho {
+    text-align: center;
+  }
+}

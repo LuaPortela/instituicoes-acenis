@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../images/fundoslides.png);
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  box-sizing: border-box;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titulo {
+  font-size: 2.5rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  color: #222222;
+}
+
+.filtroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 770px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .filtroContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 30px;
+  }
+  
+  .container {
+    padding: 60px;
+  }
+}
+
+.selectEstado {
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.botaoBuscar {
+  padding: 10px 20px;
+  background-color: #F76C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  width: 100%;
+  max-width: 250px;
+}
+
+@media (min-width: 768px) {
+  .botaoBuscar {
+    width: auto;
+  }
+}
+
+.botaoBuscar:hover {
+  background-color: #e55c7c;
+}
+
+.botaoBuscar:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.resultadosContainer {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  overflow: hidden;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .card {
+    flex-direction: row;
+  }
+}
+
+.cardImagemContainer {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+@media (min-width: 600px) {
+  .cardImagemContainer {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.cardImagem {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardConteudo {
+  flex: 1;
+  padding: 20px;
+}
+
+.cardTitulo {
+  font-size: 1.25rem;
+  margin: 0 0 8px 0;
+  color: #333;
+}
+
+.cardLocalizacao {
+  font-size: 1rem;
+  color: #666;
+  margin: 0 0 12px 0;
+}
+
+.cardDescricao {
+  font-size: 1rem;
+  color: #444;
+  margin: 0 0 15px 0;
+}
+
+.botaoSobre {
+  padding: 10px 20px;
+  background-color: #F76C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .paginacao {
+    margin-top: 130px;
+  }
+}
+
+.botaoPaginacao {
+  padding: 5px 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.botaoPaginacao:hover {
+  background-color: #f0f0f0;
+}
+
+.botaoPaginacao.ativo {
+  background-color: #F76C8C;
+  color: white;
+  border-color: #F76C8C;
+}
+
+.semResultados {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.botaoSugerir {
+  margin-top: 20px;
+  padding: 12px 18px;
+  background-color: #ffe4ec; 
+  color: #F76C8C; 
+  border: 1px solid #F76C8C; 
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  max-width: 700px;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalConteudo {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  margin: 20px;
+}
+
+.modalFechar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.formGrupo {
+  margin-bottom: 15px;
+}
+
+.formGrupo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formGrupo input,
+.formGrupo select,
+.formGrupo textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.formGrupo textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.botaoEnviar {
+  padding: 10px 15px;
+  background-color: #F76C8C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+.carregando {
+  text-align: center;
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top: 4px solid #F76C8C;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 15px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.cardSugestao {
+  background-color: #f8f9fa;
+  border: 2px dashed #ccc;
+}
+
+.cardSugestao:hover {
+  background-color: #f1f3f5;
+  border-color: #F76C8C;
+}
+
+.iconeSugestao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 48px;
+  color: #F76C8C;
+  background-color: #f8f9fa;
+}
+
+.botaoSite {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #F76C8C;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.botaoSite:hover {
+  background-color: #e55c7c;
+}
+
+.cardConteudo button {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
