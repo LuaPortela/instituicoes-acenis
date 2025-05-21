@@ -614,7 +614,7 @@ const InstituicoesProximas = () => {
     }, 1000);
   };
 
-  const instituicoesPorPagina = 2;
+  const instituicoesPorPagina = 1;
   const totalPaginas = Math.ceil(instituicoes.length / instituicoesPorPagina);
   const instituicoesPaginaAtual = instituicoes.slice(
     (paginaAtual - 1) * instituicoesPorPagina,

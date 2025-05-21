@@ -11,38 +11,44 @@ import destaque6 from '../images/destaque6.png';
 const instituicoes = [
   {
     nome: 'APAE',
+    localizacao: 'Brasil (diversas cidades)',
     imagem: destaque1,
-    descricao: 'A APAE oferece educação especializada, terapias e formação profissional em todo o Brasil, capacitando pessoas com síndrome de Down. Com ampla rede, apoia famílias, promovendo inclusão e independência por meio de cuidados multidisciplinares.',
+    descricao: 'Educação especializada e terapias para pessoas com síndrome de Down.',
     link: 'https://www.apaebrasil.org.br'
   },
   {
     nome: 'Instituto Mano Down',
+    localizacao: 'Belo Horizonte, MG',
     imagem: destaque2,
-    descricao: 'Sediado em Belo Horizonte, o Instituto Mano Down fomenta inclusão por meio de educação, esportes e programas culturais. Capacita pessoas com síndrome de Down, apoiando famílias para construir autonomia e conexões comunitárias.',
+    descricao: 'Inclusão por meio de educação, esportes e cultura.',
     link: 'https://www.manodown.org.br'
   },
   {
     nome: 'Fundação Síndrome de Down',
+    localizacao: 'Campinas, SP',
     imagem: destaque3,
-    descricao: 'Em Campinas, a Fundação Síndrome de Down promove inclusão com intervenção precoce, educação e treinamento profissional. Apoia famílias, defendendo oportunidades ao longo da vida em escolas e locais de trabalho.',
+    descricao: 'Intervenção precoce e treinamento profissional.',
     link: 'https://www.fsdown.org.br'
   },
   {
     nome: 'Instituto UniDown',
+    localizacao: 'São Paulo, SP',
     imagem: destaque4,
-    descricao: 'Em São Paulo, o Instituto UniDown oferece 12 cursos especializados para desenvolver habilidades e autonomia em jovens com síndrome de Down, capacitando-os por meio da educação e promovendo inclusão social.',
+    descricao: 'Cursos especializados para desenvolver autonomia.',
     link: 'https://www.unidown.org.br'
   },
   {
     nome: 'Associação DF Down',
+    localizacao: 'Brasília, DF',
     imagem: destaque5,
-    descricao: 'Em Brasília, a Associação DF Down defende direitos e inclusão, oferecendo grupos de apoio, oficinas e campanhas. Capacita pessoas com síndrome de Down, promovendo participação social e avanços políticos.',
+    descricao: 'Defesa de direitos e grupos de apoio.',
     link: 'https://www.dfdown.org.br'
   },
   {
     nome: 'Instituto Serendipidade',
+    localizacao: 'Rio de Janeiro, RJ',
     imagem: destaque6,
-    descricao: 'No Rio de Janeiro, o Instituto Serendipidade impulsiona inclusão profissional com treinamento e programas comunitários. Capacita pessoas com síndrome de Down, ajudando-as a obter empregos significativos e integração social.',
+    descricao: 'Inclusão profissional e programas comunitários.',
     link: 'https://www.serendipidade.org.br'
   },
 ];
@@ -91,6 +97,7 @@ function SlideInstituicoes() {
             <img src={inst.imagem} alt={inst.nome} className={Styles.destaqueCardImg} />
             <div className={Styles.destaqueCardInfo}>
               <h3>{inst.nome}</h3>
+              <p className={Styles.localizacao}>{inst.localizacao}</p>
               <p>{inst.descricao}</p>
               <div className={Styles.destaqueBotaoContainer}>
                 <a href={inst.link} className={Styles.destaqueBotao} target="_blank" rel="noopener noreferrer">

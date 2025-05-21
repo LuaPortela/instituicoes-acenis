@@ -1,6 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
@@ -8,7 +9,7 @@
 .instituicoesContainer {
   position: relative;
   height: 100vh;
-  background: url('../images/homeinstituicoes2.png') no-repeat;
+  background: url('../images/homeinstituicoes2.png') no-repeat center center;
   background-size: cover;
   font-family: 'DM Sans', sans-serif;
   color: #333;
@@ -67,7 +68,7 @@
   transition: all 0.3s ease;
 }
 
-.instituicoesBotao a{
+.instituicoesBotao a {
   text-decoration: none;
   color: white;
 }
@@ -85,11 +86,14 @@
   display: flex;
   justify-content: space-between;
   margin-top: 220px;
+  gap: 20px;
+  flex-wrap: nowrap;
 }
 
 .instituicoesItemEstatistica {
   width: 48%;
   padding: 20px;
+  box-sizing: border-box;
 }
 
 .instituicoesItemContent {
@@ -117,23 +121,15 @@
   font-weight: 400;
 }
 
+/* Responsive Styles */
 
-
-
-
-
-
-
-
-
-/* Tablet (768px - 1024px) */
+/* Tablets and smaller desktops */
 @media (max-width: 1024px) {
-
-
   .instituicoesCabecalho {
     margin-top: 50px;
+    text-align: center;
   }
-  
+
   .instituicoesCardUnico {
     flex-direction: column;
     margin-top: 150px;
@@ -141,7 +137,7 @@
     background-color: transparent;
     box-shadow: none;
   }
-  
+
   .instituicoesItemEstatistica {
     width: 100%;
     background: linear-gradient(to bottom, #F76C8C, #FFFFFF);
@@ -150,58 +146,50 @@
     margin-bottom: 20px;
     padding: 25px;
   }
-  
+
   .instituicoesDivisoria {
     display: none;
   }
 }
 
-/* Celular (até 767px) */
+/* Mobile devices */
 @media (max-width: 767px) {
+  .instituicoesCabecalho {
+    text-align: center;
+  }
+
   .instituicoesCabecalho h1 {
     font-size: 20px;
   }
-  
+
   .instituicoesCabecalho h2 {
     font-size: 36px;
   }
-  
+
   .instituicoesCabecalho p {
     font-size: 18px;
   }
-  
+
   .instituicoesBotao {
     padding: 12px 24px;
     font-size: 16px;
   }
-  
+
   .instituicoesCardUnico {
     margin-top: 100px;
+    padding: 20px;
   }
-  
+
   .instituicoesItemEstatistica {
     padding: 20px;
   }
-  
+
   .instituicoesItemEstatistica span {
     font-size: 16px;
   }
-  
+
   .instituicoesIconeEstatistica {
     width: 40px;
     height: 40px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .instituicoesCabecalho {
-    margin-top: 50px;
-    text-align: center;
-  }
-}
-
-@media (max-width: 767px) {
-  .instituicoesCabecalho {
-    text-align: center;
   }
 }
