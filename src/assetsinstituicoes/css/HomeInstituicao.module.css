@@ -121,15 +121,15 @@
   font-weight: 400;
 }
 
-/* Responsive Styles */
 
-/* Tablets and smaller desktops */
+/* Tablet (768px - 1024px) */
 @media (max-width: 1024px) {
+
+
   .instituicoesCabecalho {
     margin-top: 50px;
-    text-align: center;
   }
-
+  
   .instituicoesCardUnico {
     flex-direction: column;
     margin-top: 150px;
@@ -137,59 +137,67 @@
     background-color: transparent;
     box-shadow: none;
   }
-
-  .instituicoesItemEstatistica {
-    width: 100%;
-    background: linear-gradient(to bottom, #F76C8C, #FFFFFF);
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 25px;
+  
+  .instituicoesDivisoria {
+    display: none;
   }
 
-  .instituicoesDivisoria {
+  .instituicoesItemContent{
     display: none;
   }
 }
 
-/* Mobile devices */
-@media (max-width: 767px) {
-  .instituicoesCabecalho {
-    text-align: center;
-  }
 
+/* Celular (até 767px) */
+@media (max-width: 767px) {
   .instituicoesCabecalho h1 {
     font-size: 20px;
   }
-
+  
   .instituicoesCabecalho h2 {
     font-size: 36px;
   }
-
+  
   .instituicoesCabecalho p {
     font-size: 18px;
   }
 
+  .instituicoesItemContent{
+    display: none;
+  }
+  
   .instituicoesBotao {
     padding: 12px 24px;
     font-size: 16px;
   }
-
+  
   .instituicoesCardUnico {
     margin-top: 100px;
-    padding: 20px;
   }
-
+  
   .instituicoesItemEstatistica {
     padding: 20px;
   }
-
+  
   .instituicoesItemEstatistica span {
     font-size: 16px;
   }
-
+  
   .instituicoesIconeEstatistica {
     width: 40px;
     height: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .instituicoesCabecalho {
+    margin-top: 50px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .instituicoesCabecalho {
+    text-align: center;
   }
 }

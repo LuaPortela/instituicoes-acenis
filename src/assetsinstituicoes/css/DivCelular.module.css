@@ -1,0 +1,21 @@
+.divcelular{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: none;
+}
+
+@media (max-width: 1024px){
+        .divcelular{
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .divcelular{
+        display: block;
+    }
+}
