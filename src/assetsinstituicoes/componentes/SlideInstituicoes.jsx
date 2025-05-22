@@ -11,9 +11,9 @@ import destaque6 from '../images/destaque6.png';
 const instituicoes = [
   {
     nome: 'APAE',
-    localizacao: 'Brasil (diversas cidades)',
+    localizacao: 'Brasil',
     imagem: destaque1,
-    descricao: 'Educação especializada e terapias para pessoas com síndrome de Down.',
+    descricao: 'Educação especializada e terapias.',
     link: 'https://www.apaebrasil.org.br'
   },
   {
