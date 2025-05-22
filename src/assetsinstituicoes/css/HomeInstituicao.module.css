@@ -148,7 +148,7 @@
 }
 
 
-/* Celular (até 767px) */
+
 @media (max-width: 767px) {
   .instituicoesCabecalho h1 {
     font-size: 20px;

@@ -24,7 +24,7 @@ const instituicoes = [
     link: 'https://www.manodown.org.br'
   },
   {
-    nome: 'Fundação Síndrome de Down',
+    nome: 'Fundação Down',
     localizacao: 'Campinas, SP',
     imagem: destaque3,
     descricao: 'Intervenção precoce e treinamento profissional.',
